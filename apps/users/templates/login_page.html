@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Login Form</title>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/stylea.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_lp.css' %}">
 </head>
 <body>
     {% if messages %}
@@ -23,10 +23,10 @@
                 <p>Password</p>
                 <input type="password" name="password" placeholder="Enter Password">
                 {% if user.is_authenticated %}
-                    <input type="submit" name="" value="Logout">
+                    <a href="/logout/" class="buttons">Logout</a>
                 {% else %}
                     <input type="submit" name="" value="Login">
-                    <input type="submit" name="" value="Logoutt">
+                    <a href="/logout/" class="buttons">Logout</a>
                 {% endif %}
                 <a href="#">Forgot your password?</a><br>
                 <a href="#">Create a new account</a>
