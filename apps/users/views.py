@@ -22,4 +22,8 @@ def login_page(request):
 
 def logout_page(request):
     logout(request)
-    return redirect(request, '/login')
+    return redirect('/login')
+
+
+def home_page(request):
+    return render(request, "home_page.html")
