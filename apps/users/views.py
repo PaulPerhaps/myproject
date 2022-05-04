@@ -26,4 +26,6 @@ def logout_page(request):
 
 
 def home_page(request):
+    if not request.user.is_authenticated:
+        return redirect('/login')
     return render(request, "home_page.html")
