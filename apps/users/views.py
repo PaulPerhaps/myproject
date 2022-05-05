@@ -29,3 +29,7 @@ def home_page(request):
     if not request.user.is_authenticated:
         return redirect('/login')
     return render(request, "home_page.html")
+
+
+def profile_page(request):
+    return render(request, "profile_page.html")
