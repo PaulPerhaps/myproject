@@ -1,0 +1,32 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zoom</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/zoom.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="{% static 'js/zoom.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"></script>
+</head>
+<body>
+    <a class="btn zoom"><i class="fas fa-search-plus"></i></a>
+    <a class="btn zoom-out"><i class="fas fa-search-minus"></i></a>
+    <a class="btn zoom-init"><i class="fas fa-recycle"></i></a>
+
+    <div class="box target">
+      <h3>Target Box</h3>
+      <p>Height 300px</p>
+      <p>Width 300px</p>
+    </div>
+    <div class="box not-target">
+      <h3>Not Target Box</h3>
+      <p>Height 300px</p>
+      <p>Width 300px</p>
+    </div>
+</body>
+</html>
