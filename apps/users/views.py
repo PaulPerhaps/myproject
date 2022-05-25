@@ -33,3 +33,15 @@ def home_page(request):
 
 def profile_page(request):
     return render(request, "profile_page.html")
+
+
+def gallery_page(request):
+    return render(request, "gallery_page.html")
+
+
+def zoom(request):
+    return render(request, "zoom.html")
+
+
+def about(request):
+    return render(request, "about.html")

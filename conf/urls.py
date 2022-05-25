@@ -24,7 +24,10 @@ urlpatterns = [
     path('login/', views.login_page, name='login_page'),
     path('logout/', views.logout_page, name='logout_page'),
     path('', views.home_page, name='home_page'),
-    path('profile/', views.profile_page, name='profile_page')
+    path('profile/', views.profile_page, name='profile_page'),
+    path('gallery/', views.gallery_page, name='gallery_page'),
+    path('zoom/', views.zoom, name='zoom'),
+    path('about/', views.about, name='about')
 ]
 
 if settings.DEBUG:
