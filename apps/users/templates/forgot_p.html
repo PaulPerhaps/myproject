@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style_fp.css' %}">
+</head>
+<body>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong>Error!</strong> {{ message }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor %}
+    {%endif%}
+    <div class="loginbox">
+        <img src="{% static 'css/treelogotrue.jpg' %}" class="treelogo">
+            <h1>Enter your email</h1>
+            <form method="POST">{% csrf_token %}
+                <p>Email</p>
+                <input type="text" name="username" placeholder="Enter Email">
+                <a href="/Submit/" class="buttons">Submit</a>
+                <a href="http://127.0.0.1:8000/createa/">Create a new account</a>
+            </form>
+
+    </div>
+
+</body>
+</html>
